@@ -1,0 +1,25 @@
+# AvatarLookup Telegram Bulk Number Profile
+> Official examples for the AvatarLookup bulk product `tg_profile_batch`.
+
+## Canonical resources
+- [Product page](https://avatarlookup.com/products/tg_profile_batch): Upload numbers and download the Telegram profile data, avatar included.
+- [API documentation](https://avatarlookup.com/api-docs): Canonical request, response, limit, and error contract.
+- [GitHub repository](https://github.com/avatarlookup/telegram-bulk-number-profile-api): Official multi-language examples and OpenAPI contract.
+- [Registration](https://avatarlookup.com/register): Account registration and API-key access.
+- [Pricing](https://avatarlookup.com/pricing): Current product pricing.
+
+## Product facts
+- Brand: AvatarLookup.
+- Product code: tg_profile_batch.
+- Mode: asynchronous bulk task.
+- API base URL: https://avatarlookup.com.
+- Authentication: X-API-Key request header.
+- Submit: POST /api/v1/bulk-tasks with product=tg_profile_batch, country and a file field.
+- Poll: GET /api/v1/bulk-tasks/{id}; status is processing, success or failed.
+- Poll interval: no more than once every 30 seconds.
+- Task size: 1000 to 100000 entries, .txt or .csv, one phone number per line.
+- Input kind: phone.
+- Country: required, one country per task.
+- Result columns: Phone, activated, uid, username, first_name, last_name, Last Online Time, Active Days, Is Member, Avatar, Gender, Age, Ethnicity.
+- Billing: the file is reserved on submit; only checked entries are charged and the rest is returned. Failed tasks are refunded.
+- Examples: Python, Node.js, Go, Java, C#, PHP, Shell.
