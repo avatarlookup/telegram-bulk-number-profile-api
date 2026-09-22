@@ -42,67 +42,67 @@
     {
       "name": "Phone",
       "example": "+17253100591",
-      "description": ""
+      "description": "The submitted number."
     },
     {
       "name": "activated",
       "example": "yes",
-      "description": ""
+      "description": "Whether the number is registered on Telegram."
     },
     {
       "name": "uid",
       "example": "123456789",
-      "description": ""
+      "description": "Telegram user id."
     },
     {
       "name": "username",
       "example": "alexkim",
-      "description": ""
+      "description": "Username, empty when the account has none."
     },
     {
       "name": "first_name",
       "example": "Alex",
-      "description": ""
+      "description": "Display first name."
     },
     {
       "name": "last_name",
       "example": "Kim",
-      "description": ""
+      "description": "Display last name."
     },
     {
       "name": "Last Online Time",
       "example": "2025/12/5 13:04",
-      "description": ""
+      "description": "The most recent online time observed."
     },
     {
       "name": "Active Days",
       "example": "252",
-      "description": ""
+      "description": "Days since that activity."
     },
     {
       "name": "Is Member",
       "example": "No",
-      "description": ""
+      "description": "Whether the account has Telegram Premium."
     },
     {
       "name": "Avatar",
       "example": "https://tg.waavatar.xyz/v/example.jpg",
-      "description": ""
+      "description": "Avatar URL."
     },
     {
       "name": "Gender",
       "example": "Male",
-      "description": ""
+      "description": "Gender estimated from the avatar."
     },
     {
       "name": "Age",
       "example": "30",
-      "description": ""
+      "description": "Age band estimated from the avatar."
     },
     {
       "name": "Ethnicity",
       "example": "White",
-      "description": ""
+      "description": "Ethnicity estimated from the avatar."
     }
   ],
   "statuses": [

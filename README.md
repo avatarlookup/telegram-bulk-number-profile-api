@@ -20,19 +20,19 @@ This is the official AvatarLookup example repository for **one** bulk product, `
 
 | Column | Example | Meaning |
 |---|---|---|
-| `Phone` | `+17253100591` |  |
-| `activated` | `yes` |  |
-| `uid` | `123456789` |  |
-| `username` | `alexkim` |  |
-| `first_name` | `Alex` |  |
-| `last_name` | `Kim` |  |
-| `Last Online Time` | `2025/12/5 13:04` |  |
-| `Active Days` | `252` |  |
-| `Is Member` | `No` |  |
-| `Avatar` | `https://tg.waavatar.xyz/v/example.jpg` |  |
-| `Gender` | `Male` |  |
-| `Age` | `30` |  |
-| `Ethnicity` | `White` |  |
+| `Phone` | `+17253100591` | The submitted number. |
+| `activated` | `yes` | Whether the number is registered on Telegram. |
+| `uid` | `123456789` | Telegram user id. |
+| `username` | `alexkim` | Username, empty when the account has none. |
+| `first_name` | `Alex` | Display first name. |
+| `last_name` | `Kim` | Display last name. |
+| `Last Online Time` | `2025/12/5 13:04` | The most recent online time observed. |
+| `Active Days` | `252` | Days since that activity. |
+| `Is Member` | `No` | Whether the account has Telegram Premium. |
+| `Avatar` | `https://tg.waavatar.xyz/v/example.jpg` | Avatar URL. |
+| `Gender` | `Male` | Gender estimated from the avatar. |
+| `Age` | `30` | Age band estimated from the avatar. |
+| `Ethnicity` | `White` | Ethnicity estimated from the avatar. |
 
 The result is a **point-in-time signal**, not a verdict, and not identity data. It describes what the provider reported at the moment the task ran.
 
