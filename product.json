@@ -1,5 +1,5 @@
 {
-  "name": "Telegram Bulk Number Profile",
+  "name": "Telegram bulk number profile",
   "brand": "AvatarLookup",
   "repository": "avatarlookup/telegram-bulk-number-profile-api",
   "description": "Upload numbers and download the Telegram profile data, avatar included.",
@@ -31,7 +31,7 @@
   },
   "limits": {
     "min_items": 1000,
-    "max_items": 100000,
+    "max_items": 500000,
     "poll_interval_seconds": 30,
     "file_formats": [
       "txt",
@@ -40,69 +40,49 @@
   },
   "result_fields": [
     {
-      "name": "Phone",
-      "example": "+17253100591",
-      "description": "The submitted number."
+      "name": "identifier",
+      "example": "12345678900",
+      "description": "Submitted identifier, used to join the result to the input. Phone identifiers include their country code."
     },
     {
       "name": "activated",
-      "example": "yes",
-      "description": "Whether the number is registered on Telegram."
+      "example": "true",
+      "description": "The determined positive/negative signal for this product; interpret it in the product context."
     },
     {
       "name": "uid",
-      "example": "123456789",
-      "description": "Telegram user id."
+      "example": "1234567890",
+      "description": "Platform user ID when available."
     },
     {
       "name": "username",
-      "example": "alexkim",
-      "description": "Username, empty when the account has none."
+      "example": "alex_kim",
+      "description": "Platform username when available."
     },
     {
-      "name": "first_name",
-      "example": "Alex",
-      "description": "Display first name."
+      "name": "activedays",
+      "example": "9",
+      "description": "Activity-day signal when available. Telegram privacy may coarsen it to 0, 7, 30 or 1000; it is not an exact login timestamp."
     },
     {
-      "name": "last_name",
-      "example": "Kim",
-      "description": "Display last name."
+      "name": "avatar_url",
+      "example": "https://telegram.waavatar.xyz/v/example.jpg",
+      "description": "Public avatar URL when available; an empty value does not reveal a private image."
     },
     {
-      "name": "Last Online Time",
-      "example": "2025/12/5 13:04",
-      "description": "The most recent online time observed."
+      "name": "age",
+      "example": "31",
+      "description": "Age estimated from the avatar, not a verified personal fact."
     },
     {
-      "name": "Active Days",
-      "example": "252",
-      "description": "Days since that activity."
+      "name": "gender",
+      "example": "male",
+      "description": "Gender presentation estimated from the avatar."
     },
     {
-      "name": "Is Member",
-      "example": "No",
-      "description": "Whether the account has Telegram Premium."
-    },
-    {
-      "name": "Avatar",
-      "example": "https://tg.waavatar.xyz/v/example.jpg",
-      "description": "Avatar URL."
-    },
-    {
-      "name": "Gender",
-      "example": "Male",
-      "description": "Gender estimated from the avatar."
-    },
-    {
-      "name": "Age",
-      "example": "30",
-      "description": "Age band estimated from the avatar."
-    },
-    {
-      "name": "Ethnicity",
-      "example": "White",
-      "description": "Ethnicity estimated from the avatar."
+      "name": "skin_color",
+      "example": "white",
+      "description": "Skin-tone estimate derived from the avatar."
     }
   ],
   "statuses": [
@@ -113,5 +93,5 @@
   "pricing_url": "https://avatarlookup.com/pricing",
   "maintainer": "AvatarLookup",
   "license": "MIT",
-  "last_reviewed": "2026-09-22"
+  "last_reviewed": "2026-10-30"
 }
