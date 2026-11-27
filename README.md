@@ -59,7 +59,7 @@ The current brand-side export uses these columns, in this order. Preserve their 
 | `uid` | `1234567890` | Platform user ID when available. |
 | `username` | `alex_kim` | Platform username when available. |
 | `activedays` | `9` | Activity-day signal when available. Telegram privacy may coarsen it to 0, 7, 30 or 1000; it is not an exact login timestamp. |
-| `avatar_url` | `https://telegram.waavatar.xyz/v/example.jpg` | Public avatar URL when available; an empty value does not reveal a private image. |
+| `avatar_url` | `https://cdn.example.com/avatar/example.jpg` | Public avatar URL when available; an empty value does not reveal a private image. |
 | `age` | `31` | Age estimated from the avatar, not a verified personal fact. |
 | `gender` | `male` | Gender presentation estimated from the avatar. |
 | `skin_color` | `white` | Skin-tone estimate derived from the avatar. |
